@@ -4,7 +4,7 @@
 
 ## Hardware List
 
-**Specific models** [TRX40 AORUS PRO WIFI](https://www.gigabyte.com/Motherboard/TRX40-AORUS-PRO-WIFI-rev-10#kf)
+**Specific model:** [TRX40 AORUS PRO WIFI](https://www.gigabyte.com/Motherboard/TRX40-AORUS-PRO-WIFI-rev-10#kf)
 
 |   Hardware   |                       Information                       | status |
 | :----------: | :-----------------------------------------------------: | :----: |
@@ -58,7 +58,7 @@ For more information, please see: [AMD Ryzen and Threadripper(17h and 19h)](http
 ### MimoWhiteList setting for TRX40
 Although you may have same motherboard series with above one. For TRX40 users, you need to find out and calculate MimoWhiteList patches by yourselves. Each change and software update of BIOS would probably change memory regions that need to be patched, it includes the same motherboard but different envirnoment. Recommend not to use configuration directly without setting your own MimoWhiteList patches. This applies to all TRX40 series.
 
-If you want to know more details about the quirk - MimoWhiteList，please see []()
+If you want to know more details about the quirk - MimoWhiteList，please see [Using DevirtualiseMmio](https://dortania.github.io/OpenCore-Install-Guide/extras/kaslr-fix.html#using-devirtualisemmio)
 
 ### Not the model of my cpu ?
 It justly figures out the model of your ryzen / threadripper cpu.
