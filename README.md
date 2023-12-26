@@ -61,11 +61,11 @@ Although you may have same motherboard series with above one. For TRX40 users, y
 If you want to know more details about the quirk - MimoWhiteList，please see [Using DevirtualiseMmio](https://dortania.github.io/OpenCore-Install-Guide/extras/kaslr-fix.html#using-devirtualisemmio)
 
 ### Not the model of my cpu ?
-It justly figures out the model of your ryzen / threadripper cpu.
+Just figure out the model of your ryzen / threadripper cpu.
 You can fix the patches by yourselves according to [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla). 
 
 ### How can I do when my hardware is not included in list ?
-The list that displays various hardware is installed by myself, you could correct configuration file by yourself if you have other hardware. Similarly, if some hardwares which are displayed above is not installed on your machine. You could manually set related driver to disable status in configuration file.
+The list that displays various hardware is installed for myself, you could correct configuration file by yourself if you have other hardware. Similarly, if some hardwares which are displayed above is not installed on your machine. You could manually set related driver to disable status in configuration file.
 
 ### Why I211-AT did not get support ?
 I211-AT is not officially supported by Apple. There is no stable driver for this ethernet card now:
@@ -75,7 +75,7 @@ I211-AT is not officially supported by Apple. There is no stable driver for this
 It is highly recommended to replace a network card that can be supported.
 
 #### Can I flash it to Driver-free card（I210-AT）to solve problem ？
-**Not recommended at all!** It is okay for router running openwrt, windows server or nas envirnoment but not hackintosh.
+**Not recommended at all!** It is okay for router running openwrt, windows server or nas envirnoment but not Ryzentosh.
 The originally official driver - AppleIntelI210Ethernet for I210-AT which was written by apple has been removed after macOS monterey. 
 Now the driver for I210-AT - AppleIEthernet1000 relies on DriverKit Framework that was developed by apple. Most importantly, DriverKit relies on Intel® Vt-d technology so that is unavailable on AMD plantform. You may experience unexpected restarts or inability to sign in when you plug in network-cable.
 
