@@ -37,6 +37,17 @@ May not all options are present in your firmware. Do not be too concerned if man
 - OS type: Windows 8.1/10 UEFI Mode (Or maybe "Other OS" instead)
 - SATA Mode: AHCI
 
+## Special note
+### Why I can not detect OTA and OTA updates failures?
+The default model is MacPro7,1. Without patch, it may not detect OTA updates successfully on macOS sonoma. It needs extra booting arguments that comes from [restrictEvents](https://github.com/acidanthera/RestrictEvents) driver. Add extra boot-args `revpatch=auto,asset,sbvmm` to `NVRAM` -> `Add` -> `7C436110-AB2A-4BBB-A880-FE41995C9F82` -> `boot-args` **(Fixed)**
+
+Users of the **Intel wireless adapter plantform** need special attention: In addition to applying the above patch, you also need to disable Bluetooth-related drivers. They usually are：
+- IntelBTPatcher
+- IntelBluetoothFirmware
+- BlueToolFixup or BrcmBluetoothInjector
+  
+After finishing updates, please re-enable related bluetooth drivers.
+
 ## Help
 ### Before your installation
   1. check your BIOS setting
