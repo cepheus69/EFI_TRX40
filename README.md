@@ -48,6 +48,10 @@ Users of the **Intel wireless adapter plantform** need special attention: In add
   
 After finishing updates, please re-enable related bluetooth drivers.
 
+### Problem with infinite reboot upgrade on MacOS Installer boot
+When upgrading MacOS Sonoma 14.4 or higher, the upgrade fails with infinite reboot on MacOS Installer boot. Set SecureBootModel to **Disabled** in OpenCore and reset it to its original value after the upgrade.
+> If you are using an Intel wireless card, make sure that AirportItlwm-Sonoma-14.4-v2.3.0 or itlwm-v2.3.0 is installed before your updates.
+
 ## Help
 ### Before your installation
   1. check your BIOS setting
